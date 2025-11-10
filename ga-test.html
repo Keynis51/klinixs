@@ -1,0 +1,17 @@
+<!doctype html><html lang="fr"><meta charset="utf-8">
+<title>GA4 test KLINIXS</title>
+
+<!-- GA4 (test dédié) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7T2XQN915Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+  gtag('config','G-7T2XQN915Y', { debug_mode: true });
+  gtag('event','ga_debug_ping',{page:'ga-test', ts:Date.now()});
+  console.log('GA4 test chargé, gtag =', typeof gtag);
+</script>
+
+<h1>Test GA4</h1>
+<p>Si GA fonctionne, vous verrez 1 utilisateur dans Temps réel et l’événement <code>ga_debug_ping</code> dans DebugView.</p>
+</html>
